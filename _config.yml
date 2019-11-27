@@ -1,0 +1,23 @@
+# Site settings
+title: கௌரி கிருபானந்தன்
+email: gowri@kirubanandan.com
+description: Gowri Kirubanandan is a Tamil writer known for her Telugu - Tamil translation works. She won Sahitya Akademi's Translation Prize in 2015 for her translation of Telugu novel Vimuktha, by Volka into Tamil, titled Meetchi.
+type: website
+image: /assets/imgs/octojekyll.jpg
+host: 0.0.0.0
+
+# Server Config options
+livereload: true
+
+# SASS
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+collections:
+  books:
+    output: true
+    permalink: /books/:path
+  stories:
+    output: true
+    permalink: /stories/:path
