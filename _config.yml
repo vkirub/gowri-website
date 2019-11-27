@@ -5,6 +5,8 @@ description: Gowri Kirubanandan is a Tamil writer known for her Telugu - Tamil t
 type: website
 image: /assets/imgs/octojekyll.jpg
 host: 0.0.0.0
+baseurl: ""
+hostname: http://gowri-beta.kirubanandan.com
 
 # Server Config options
 livereload: true
