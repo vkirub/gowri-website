@@ -1,63 +1,26 @@
 ---
 author: index
 layout: default
-title: Books
+title: Work
 description: All of Gowri's works
 permalink: /work
 ---
-    <div class="container" style="padding-top:2rem;">
-      <h1 class="display-4">{{page.title}}</h1>
-	  <div class="content">
-      <table border=1>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Publisher</th>
-        </tr>
-  {% assign books = site.books | sort: 'author' %}
-  {% for book in books %}
-    <tr>
-      <td><a href="{{ book.url }}">{{ book.title }}</a></td>
-      <td>{{ book.author }}</td>
-      <td>{{ book.publisher }}</td>
-    </tr>
-  {% endfor %}
-</table>
-      </div>
-	</div>
-
-
-<div class="container">
+<div class="container" style="padding-top:2rem;">
   <div class="row">
-  {% assign currentAuthor = "empty" %}          
-{% assign books = site.books | sort: 'author' %}
-  {% for book in books %}
-    {% if currentAuthor != book.author %}
+    <div class="col">
+      <h1 class="display-4">{{page.title}}</h1>
     </div>
-    <div class="row">
-      <div class="col-xl-12 d-flex">
-        <h2>{{ book.author }}</h2>
-      </div>
-    </div>
-    <div class="row">
-      {% assign currentAuthor =  book.author %}
-  {% endif %}
-
-          <div class="col-lg-6 col-xl-2 d-flex">
-    <div class="card" style="margin-bottom:1rem;width: 200px;">
-      <img class="card-img-top" 
-      {% if book.cover %}
-       src="/assets/imgs/books/{{book.cover}}"
-      {% else %}
-        src="{{site.image}}"
-      {% endif %}
-      >
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">{{book.title}}</h5>
-        <a href="{{ book.url }}" class="btn btn-primary">Read More...</a>
-      </div>
-    </div>
-</div>
-    {% endfor %}
+  </div>
+  <div class="col">
+    <h2 class="display-5">Books</h2>
+  </div>
+  <div class="row">
+    {% include books-list.html %}
+  </div>
+  <div class="col">
+    <h2 class="display-5">Stories</h2>
+  </div>
+  <div class="row">
+    {% include stories-list.html %}
   </div>
 </div>
