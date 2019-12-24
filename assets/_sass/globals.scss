@@ -2,16 +2,6 @@ img {
   max-width:100%;
 }
 
-.bg {
-    min-height: 40vh;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url('/assets/imgs/chennai-skyline.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
 .sticky-top {
     transition: all 0.25s ease-in;
 }
@@ -24,7 +14,3 @@ img {
     padding-bottom: 3px !important;
 }
 
-p {
-   font-size: 1.25rem;
-   line-height: 2rem;
-}
