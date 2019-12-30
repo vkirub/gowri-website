@@ -1,3 +1,6 @@
+# Developing Installation
+* sudo apt-get install ruby-bundler ruby-dev zlib1g-dev
+
 # Jekyll Template
 
 This is a template for Jekyll and Bootstrap 4 using Filament Group's [LoadJS](https://github.com/filamentgroup/loadJSFilament) and
