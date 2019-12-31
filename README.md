@@ -1,5 +1,6 @@
 # Developing Installation
-* sudo apt-get install ruby-bundler ruby-dev zlib1g-dev
+* sudo apt-get install ruby ruby-dev zlib1g-dev
+* sudo gem install bundler
 
 # Jekyll Template
 

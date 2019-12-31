@@ -1,0 +1,17 @@
+---
+layout: default
+---
+    <div class="container" style="padding-top:2rem;">
+      <h1 class="display-4">{{page.title}}</h1>
+      <h2>{{page.publisher}}</h2>
+      <div class="content">
+        <div class="row">
+          <div class="col-lg-2">
+            <img width="200" src="/assets/imgs/mentions/{{ page.image }}" class="img-responsive img-circle" alt="">
+          </div>
+          <div class="col-lg-10">
+            {{content}}
+          </div>
+        </div>
+      </div>
+    </div>

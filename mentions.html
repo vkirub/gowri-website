@@ -1,0 +1,21 @@
+---
+author: index
+layout: default
+title: Press & Mentions
+description: Press and Mentions
+permalink: /press
+---
+<div class="container" style="padding-top:2rem;">
+  <div class="row">
+    <div class="col">
+      <h1 class="display-4">{{page.title}}</h1>
+    </div>
+  </div>
+  {% for mention in site.mentions %}
+  <a href="{{ mention.url }}">
+    <div class="row">
+      {{ mention.title }}, {{ mention.publisher }}, {{mention.publish_date}}
+    </div>
+  </a>
+  {% endfor %}
+</div>

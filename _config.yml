@@ -23,3 +23,6 @@ collections:
   stories:
     output: true
     permalink: /stories/:path
+  mentions:
+    output: true
+    permalink: /mentions/:path
